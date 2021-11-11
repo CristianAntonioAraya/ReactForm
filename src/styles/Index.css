@@ -1,0 +1,19 @@
+body,html{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url('../assets/Bg.png');
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ /* 
+ Dark: #142F43
+ Primary: #FF9292    darken
+ Secondary: #FFB4B4
+ Tertiary: #FFDCDC
+ quaternary: #FFE8E8 lighten
+ 
+ */
