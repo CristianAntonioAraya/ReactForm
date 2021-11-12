@@ -1,0 +1,34 @@
+.sign__container{
+    position: relative;
+    display: block;
+    width: 30rem;
+    height: 35rem;
+    padding: 2rem;
+    margin: 2rem;
+    border: 2px solid white;
+    transition: all 1s ease;
+    top: 0;
+    left: 25%;
+}
+.log{
+    top: 0;
+    right: 0;
+}
+.form__content{
+    display: flex;
+    flex-direction: column;
+}
+.form__input{
+    margin: 1rem 0;
+    padding: 0.5rem;
+    background-color: transparent;
+    border-width: 0 0 2px 2px;
+    border-color: white;
+    border-style: solid;
+}
+.front{    
+    z-index: 6;
+}
+.behind{
+    z-index: 2;
+}

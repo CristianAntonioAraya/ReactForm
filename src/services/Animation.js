@@ -1,20 +1,42 @@
 
 
 export const Slide = () => {
-    const btn = document.getElementById('btn');
-    const btn2 = document.getElementById('btn2')
+    const LoginSlide = document.getElementById('LoginSlide'); // Is a ref of login slide container
+    const LoginSlideButton = document.getElementById('LoginSlideButton');
+
+    const SignSlide = document.getElementById('SignSlide');
+    const RegisterSlideButton = document.getElementById('RegisterSlideButton');
+
     const slide = document.getElementById('square-slide');
     const skew = document.getElementById('skew-slide');
-    btn.addEventListener('click', () => {
+
+    const form = document.getElementById('form')
+    const form2 = document.getElementById('form2')
+
+    LoginSlideButton.addEventListener('click', () => {
         slide.classList.toggle('square');
         skew.classList.toggle('skew');
-        btn.classList.toggle('show');
-        btn2.classList.toggle('show');
+        LoginSlide.classList.toggle('show');
+        SignSlide.classList.toggle('show');
+        form.classList.toggle('behind');
+        form.classList.toggle('front');
+        setTimeout(() => {
+            form2.classList.toggle('behind');
+            form2.classList.toggle('front');
+        }, 800);
+        
     })
-    btn2.addEventListener('click', () => {
+    RegisterSlideButton.addEventListener('click', () => {
         slide.classList.toggle('square');
         skew.classList.toggle('skew');
-        btn.classList.toggle('show');
-        btn2.classList.toggle('show');
+        LoginSlide.classList.toggle('show');
+        SignSlide.classList.toggle('show');
+        form2.classList.toggle('front');
+        form2.classList.toggle('behind');
+        setTimeout(() => {
+            form.classList.toggle('behind');
+            form.classList.toggle('front');
+        }, 800);
+        
     })
 }

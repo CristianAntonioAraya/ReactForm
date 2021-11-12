@@ -12,22 +12,22 @@
     height: 40rem;
     width: 90rem;
     box-shadow: 5px 6px 6px 3px rgba(20,47,67,0.45);
+    z-index: 1;
 }
 .main__content-info{
     display: grid;
+    position: absolute;
     width: 100%;
     grid-template-columns: 1fr 1fr;
-    position: absolute;
-    padding: 3rem;
 }
 .main__content-text{
     margin: 5rem 4rem;
 }
 .main__content-slide{
+    display: flex;
     width: 100%;
     height: 100%;
-    z-index: 4;
-    display: flex;
+    z-index: 3;
 }
 .main__content-square{
     position: absolute;
@@ -35,9 +35,9 @@
     width: 40%;
     left: 60%;
     background-color: white;
-    transition: all 0.7s ease;
-    z-index: 3;
+    transition: all 1.3s ease;
     border-radius: 20px;
+    z-index: 8;
 }
 .main__content-skew{
     position: absolute;
@@ -45,9 +45,9 @@
     width: 40%;
     left: 46%;
     background-color: white;
-    transition: all 0.7s ease;
+    transition: all 1.5s ease;
     transform: skew(-10deg);
-    z-index: 1;
+    z-index: 8;
 }
 .square{
     left: 0;

@@ -1,0 +1,39 @@
+.loginslide__container{
+    position: relative;
+    height: 90%;
+    margin: 2rem;
+    padding: 1rem 3rem;
+    border: 2px solid #FF9292;
+    z-index: 4;
+}
+.loginslide__content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.loginslide__text{
+    font-size: 40px;
+    color: #142F43;
+    font-family: 'Alfa Slab One', cursive;
+}
+.loginslide__button{
+    position: relative;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 2px solid #FF9292;
+    color: #FF9292;
+    font-size: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.loginslide__button:hover{
+    border: 2px solid white;
+    background-color: #FF9292;
+    color: white;
+}

@@ -3,11 +3,13 @@ body,html{
     height: 100vh;
     overflow: hidden;
     background-image: url('../assets/Bg.png');
+
 }
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
 }
  /* 
  Dark: #142F43
